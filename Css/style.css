@@ -1,0 +1,224 @@
+/* Default styles */
+.space {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.banner {
+  background: url(../image/banner.jpg) no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 800px;
+}
+
+.nav-item {
+  padding: 10px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-container img {
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+
+.shadow-box {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.inner-border {
+  border-style: dashed;
+  border-color: #9f674f;
+  padding: 32px;
+  margin: -28px;
+}
+
+.inner-border i {
+  color: #9f674f;
+}
+
+.above-img {
+  position: absolute;
+  bottom: 100px;
+  left: 130px;
+  width: 500px;
+  height: 500px;
+  z-index: 1;
+}
+
+.blog .carousel-item {
+  height: 300px;
+}
+
+.blog .carousel-item img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.blog .carousel-indicators {
+  left: 0;
+  top: auto;
+  bottom: -20px;
+}
+
+.blog .carousel-indicators li {
+  background: #a3a3a3;
+  border-radius: 100px;
+}
+
+.blog .carousel-indicators .active {
+  background: #707070;
+}
+
+.img-size {
+  width: 200px;
+  height: auto;
+  border: 2px solid #9f674f;
+  border-radius: 151px;
+  padding: 10px;
+}
+
+.product-image {
+  background-color: rgb(248, 239, 234);
+  max-width: 100%;
+  height: 300px;
+}
+
+#line {
+  border: 0;
+  height: 8px;
+  background-color: rgb(239, 216, 216);
+  margin: 7px 0;
+}
+
+.best-sellers h2 {
+  position: relative;
+}
+
+.best-sellers h2::after {
+  content: "";
+  position: absolute;
+  top: 80%;
+  width: 86%;
+  height: 1px;
+  background-color: #000;
+  margin-top: -0.5px;
+}
+
+.post-img {
+  max-width: 100%;
+  height: 300px;
+}
+
+#appointment {
+  background: url(../image/woman.jpg) no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.colored {
+  color: #9f674f;
+}
+
+input[type="email"] {
+  background-color: rgb(31, 38, 43);
+  border: none;
+  border-bottom: 2px solid #fff;
+}
+
+.image {
+  height: auto;
+  width: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.img-div {
+  position: absolute;
+  top: 38%;
+  left: 80px;
+  background-color: rgb(253, 231, 218);
+  height: 309px;
+  width: 579px;
+  z-index: 0;
+}
+
+.gradient {
+  background-image: linear-gradient(to left, white, rgb(253, 235, 223));
+}
+
+.col-md-4 h5::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+  margin-top: 10px;
+}
+
+.with-border {
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.image-container {
+  width: 100px;
+  position: absolute;
+  top: -41px;
+  left: 81px;
+}
+
+.img-background {
+  border-radius: 50%;
+  background-color: #fff;
+  height: 117px;
+  width: 117px;
+  padding: 9px;
+}
+
+.package-image {
+  height: auto;
+  width: 600px;
+}
+
+/* Service of Andfasion */
+.fruit-image {
+  position: absolute;
+  height: auto;
+  width: 200px;
+  left: 561px;
+  top: 66px;
+  z-index: 1;
+}
+
+.content-box1 {
+  background-image: linear-gradient(to right, white, rgb(253, 234, 223));
+  border-radius: 110px;
+  justify-content: center;
+}
+
+.content-box2 {
+  background-image: linear-gradient(to left, white, rgb(253, 234, 223));
+  border-radius: 110px;
+}
+
+.logo-image {
+  height: auto;
+  width: 80px;
+  margin-right: 10px;
+}
+
+.company-logo {
+  height: auto;
+  width: 120px;
+}
