@@ -15,9 +15,22 @@
   padding: 10px;
 }
 
+@media (max-width: 767px) {
+  .nav-item {
+    padding: 0px;
+  }
+}
+
 .logo-container {
   display: flex;
   align-items: center;
+}
+
+@media (max-width: 767px) {
+  .logo-container {
+    display: block;
+    align-items: center;
+  }
 }
 
 .logo-container img {
@@ -84,7 +97,7 @@
 
 .product-image {
   background-color: rgb(248, 239, 234);
-  max-width: 100%;
+  width: 100%;
   height: 300px;
 }
 
@@ -103,14 +116,20 @@
   content: "";
   position: absolute;
   top: 80%;
-  width: 86%;
+  width: 84%;
   height: 1px;
   background-color: #000;
   margin-top: -0.5px;
 }
 
+@media (max-width: 576px) {
+  .best-sellers h2::after {
+    width: 65%;
+  }
+}
+
 .post-img {
-  max-width: 100%;
+  width: 100%;
   height: 300px;
 }
 
@@ -130,52 +149,49 @@ input[type="email"] {
   background-color: rgb(31, 38, 43);
   border: none;
   border-bottom: 2px solid #fff;
+  padding-bottom: 6px;
+}
+
+@media (max-width: 767px) {
+  input[type="email"] {
+    width: 170px;
+  }
+}
+
+@media (max-width: 600px) {
+  input[type="email"] {
+    width: 170px;
+    padding-bottom: 6px;
+  }
 }
 
 .image {
+  width: 100%;
   height: auto;
-  width: 400px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: relative;
   z-index: 1;
 }
 
 .img-div {
   position: absolute;
-  top: 38%;
-  left: 80px;
+  top: 32%;
+  left: 5%;
   background-color: rgb(253, 231, 218);
   height: 309px;
-  width: 579px;
+  width: 547px;
   z-index: 0;
 }
 
-.gradient {
-  background-image: linear-gradient(to left, white, rgb(253, 235, 223));
-}
-
-.col-md-4 h5::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 1px;
-  background-color: #000;
-  margin-top: 10px;
-}
-
-.with-border {
-  border: 1px solid #ffffff;
-  border-radius: 50%;
-  padding: 5px;
+@media (max-width: 767px) {
+  .img-div {
+    display: none;
+  }
 }
 
 .image-container {
   width: 100px;
-  position: absolute;
-  top: -41px;
-  left: 81px;
+  position: relative;
+  margin-top: -90px;
 }
 
 .img-background {
@@ -186,9 +202,29 @@ input[type="email"] {
   padding: 9px;
 }
 
+@media (max-width: 767px) {
+  .image-container {
+    position: static;
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+}
+
 .package-image {
   height: auto;
   width: 600px;
+}
+
+@media (max-width: 768px) {
+  .package-image {
+    width: 540px;
+  }
+}
+
+@media (max-width: 576px) {
+  .package-image {
+    width: 354px;
+  }
 }
 
 /* Service of Andfasion */
@@ -201,7 +237,14 @@ input[type="email"] {
   z-index: 1;
 }
 
-.content-box1 {
+@media (max-width: 767px) {
+  .fruit-image {
+    display: none;
+  }
+}
+
+.content-box1,
+.content-box2 {
   background-image: linear-gradient(to right, white, rgb(253, 234, 223));
   border-radius: 110px;
   justify-content: center;
@@ -209,7 +252,6 @@ input[type="email"] {
 
 .content-box2 {
   background-image: linear-gradient(to left, white, rgb(253, 234, 223));
-  border-radius: 110px;
 }
 
 .logo-image {
@@ -221,4 +263,32 @@ input[type="email"] {
 .company-logo {
   height: auto;
   width: 120px;
+}
+
+.owl-image {
+  height: 300px;
+  width: 400px;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  border: 1px solid #9a563a;
+}
+
+@media (max-width: 800px) {
+  .logo-section {
+    display: block;
+    padding-left: 71px;
+  }
+}
+
+@media (min-width: 800px) {
+  .image {
+    width: 400px;
+  }
+}
+
+.gradient {
+  background-image: linear-gradient(to left, white, rgb(253, 235, 223));
 }
